@@ -7,7 +7,6 @@ FROM alpine:latest
 USER root
 
 RUN apk update
-RUN apk update --available && sync
 RUN apk upgrade
 
 RUN mkdir -p /data
