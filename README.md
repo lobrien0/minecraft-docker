@@ -29,3 +29,16 @@ Please do the following to compile the docker file:
    docker build -t <tag> .
    ```  
    > The `<tag>` represents the name you'd like to give your container
+   
+   > The `Dockerfile` may not compile unless you have a folder name `plugins` in the working Directory.  
+   > please see more about it below
+
+## Plugins
+
+In order to add the plugins to the server you must:
+
+1. Create a folder in the same directory of the `Dockerfile` called `plugins`
+
+2. Put all the `.jar` plugin files you'd like in there
+
+3. Compile docker image using instructions above
